@@ -1,0 +1,58 @@
+[
+  {
+    "id": "academic-affairs",
+    "label": "教務處",
+    "description": "註冊、選課、學籍、畢業相關公告",
+    "url": "https://acad.ntnu.edu.tw",
+    "icon": "building-2"
+  },
+  {
+    "id": "library",
+    "label": "圖書館",
+    "description": "借閱查詢、館舍開放時間、論文格式規範",
+    "url": "https://www.lib.ntnu.edu.tw",
+    "icon": "book-open"
+  },
+  {
+    "id": "course-system",
+    "label": "選課系統",
+    "description": "線上選課、加退選、課程查詢",
+    "url": "https://courseap2.ntnu.edu.tw",
+    "icon": "calendar-days"
+  },
+  {
+    "id": "scholarship-system",
+    "label": "獎助學金申請系統",
+    "description": "研究生獎學金、助學金線上申請",
+    "url": "https://reg.ntnu.edu.tw",
+    "icon": "wallet"
+  },
+  {
+    "id": "student-affairs",
+    "label": "學務處",
+    "description": "宿舍申請、生活輔導、社團活動",
+    "url": "https://osa.ntnu.edu.tw",
+    "icon": "clipboard-list"
+  },
+  {
+    "id": "intranet",
+    "label": "iNTNU 校務資訊系統",
+    "description": "個人學籍資料、成績、修課紀錄",
+    "url": "https://intranet.ntnu.edu.tw",
+    "icon": "graduation-cap"
+  },
+  {
+    "id": "campus-map",
+    "label": "校園地圖",
+    "description": "校本部、公館校區、林口校區地圖",
+    "url": "https://www.ntnu.edu.tw/about/map.php",
+    "icon": "map-pin"
+  },
+  {
+    "id": "international-affairs",
+    "label": "國際事務處",
+    "description": "外籍生事務、居留證、境外生輔導",
+    "url": "https://oia.ntnu.edu.tw",
+    "icon": "globe"
+  }
+]

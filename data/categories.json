@@ -1,0 +1,8 @@
+[
+  { "id": "pre-admission", "label": "入學前準備", "colorToken": "slate" },
+  { "id": "admission", "label": "入學流程", "colorToken": "blue" },
+  { "id": "registration", "label": "註冊選課", "colorToken": "teal" },
+  { "id": "funding", "label": "獎助學金", "colorToken": "amber" },
+  { "id": "thesis", "label": "論文相關", "colorToken": "purple" },
+  { "id": "graduation", "label": "畢業流程", "colorToken": "rose" }
+]
