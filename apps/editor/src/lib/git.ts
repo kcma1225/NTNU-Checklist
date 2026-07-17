@@ -19,11 +19,27 @@ async function git(args: string[]): Promise<string> {
     throw new GitError(`${repoRoot} is not a git repository — did you run \`git init\`?`);
   }
   try {
-    const { stdout } = await execFileAsync("git", args, { cwd: repoRoot });
+    const { stdout } = await execFileAsync("git", args, {
+      cwd: repoRoot,
+      timeout: 30_000,
+      // Without a tty, `git push` can otherwise hang forever waiting for an SSH host-key
+      // confirmation or an HTTPS credential prompt no one can answer. Forcing both off
+      // makes those cases fail immediately with a real error instead of hanging.
+      env: {
+        ...process.env,
+        GIT_TERMINAL_PROMPT: "0",
+        GIT_SSH_COMMAND: `${process.env.GIT_SSH_COMMAND ?? "ssh"} -o BatchMode=yes`,
+      },
+    });
     return stdout;
   } catch (error) {
     const stderr = error instanceof Error && "stderr" in error ? String((error as { stderr: unknown }).stderr) : "";
-    throw new GitError(stderr.trim() || (error instanceof Error ? error.message : "git command failed"));
+    const timedOut = error instanceof Error && "killed" in error && (error as { killed?: boolean }).killed;
+    throw new GitError(
+      stderr.trim() ||
+        (timedOut ? "git command timed out after 30s — likely stuck on an auth/host-key prompt" : undefined) ||
+        (error instanceof Error ? error.message : "git command failed"),
+    );
   }
 }
 
