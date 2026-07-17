@@ -1,29 +1,5 @@
 [
   {
-    "id": "dorm-application",
-    "title": "研究生宿舍申請",
-    "category": "pre-admission",
-    "startDate": "2026-07-01T23:59:00+08:00",
-    "endDate": "2026-07-01T23:59:00+08:00",
-    "location": "線上宿舍申請系統",
-    "summary": "名額有限，逾期恕不受理，請儘早完成申請。",
-    "description": "透過學務處生活輔導組「宿舍申請系統」提交住宿申請，需檢附錄取通知書與相關證明文件。宿舍分配以申請時間與名額為主要考量。",
-    "department": "學務處生活輔導組",
-    "checklist": [
-      "碩士班錄取通知書",
-      "身分證正反面影本",
-      "宿舍申請表",
-      "[test](https://test.com)"
-    ],
-    "officialUrl": "https://osa.ntnu.edu.tw",
-    "mapUrl": "https://www.google.com/maps/search/?api=1&query=國立臺灣師範大學+學生宿舍",
-    "academicYear": "115",
-    "semester": 1,
-    "calendar": {
-      "enabled": true
-    }
-  },
-  {
     "id": "admission-confirm",
     "title": "碩士班錄取資格確認",
     "category": "pre-admission",
