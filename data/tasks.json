@@ -289,27 +289,5 @@
     "calendar": {
       "enabled": true
     }
-  },
-  {
-    "id": "graduation-application",
-    "title": "畢業離校手續申請",
-    "category": "graduation",
-    "startDate": "2027-06-10T23:59:00+08:00",
-    "endDate": "2027-06-10T23:59:00+08:00",
-    "location": "教務處／線上離校系統",
-    "summary": "完成論文口試後，依序辦理離校手續（圖書館、系所、宿舍等）。",
-    "description": "通過學位考試後，須至線上離校系統依序完成各單位（圖書館、系辦、宿舍、國際處等）確認，全部完成後方可申請畢業證書。",
-    "department": "教務處",
-    "checklist": [
-      "離校程序單（線上列印）",
-      "論文定稿電子檔上傳",
-      "圖書館歸還證明"
-    ],
-    "officialUrl": "https://acad.ntnu.edu.tw",
-    "academicYear": "115",
-    "semester": 2,
-    "calendar": {
-      "enabled": true
-    }
   }
 ]
